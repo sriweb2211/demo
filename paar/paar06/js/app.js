@@ -14,8 +14,13 @@
 
 	    if (scroll >= 50) {
 	        $(".sticky").addClass("nav-sticky");
+	        // $("#menuBuy").html('<button class="btn btn-dark my-2 my-sm-0" href="#order">Buy</button>');
+	        // $("#menuBuy").html('<a href="#order" class="btn btn-dark btn-sm btn-block">Buy</a>');
+	        $("#menuBuy").html('<a href="#order" class="btn btn-dark btn-lg bg-dark">Buy</a>');
 	    } else {
 	        $(".sticky").removeClass("nav-sticky");
+	        $("#menuBuy").html('<a href="#order" class="nav-link">Buy</a>');
+	        
 	    }
 	});
 
