@@ -236,7 +236,16 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <button type="submit" id="submit" name="send" class="btn btn-dark">Buy <i class="icon-size-15 ml-2 icon" data-feather="shopping-cart"></i></button>
+                                            <!-- <button type="submit" id="submit" name="send" class="btn btn-dark">Buy <i class="icon-size-15 ml-2 icon" data-feather="shopping-cart"></i></button> -->
+                                            <div class="razorpay-embed-btn text-left" data-url="https://pages.razorpay.com/pl_FGfvq8ZtC1zoFV/view" data-text="Pay Now" data-color="#0E2E60" data-size="medium">
+                                              <script>
+                                                (function(){
+                                                  var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+                                                  if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+                                                  s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+                                                  rzp && rzp.init && rzp.init()}})();
+                                              </script>
+                                            </div>
                                             <div id="simple-msg"></div>
                                         </div>
                                     </div>
