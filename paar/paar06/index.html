@@ -223,18 +223,20 @@
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="name">Quantity*</label>
-                                                <input name="name" id="name" type="number" value="1" min="1" max="5" class="form-control" placeholder="Your quantity..." id="qtyText">
+                                                <input type="number" value="1" min="1" max="5" class="form-control" id="qtyText" placeholder="Your quantity...">
+                                                <!-- <input type="number" value="1" min="1" max="5" class="form-control col mb-2 mr-sm-2" id="qtyText" placeholder="Quantity"> -->
                                             </div>
                                         </div>
                                         <div class="col-md-10">
                                             <div class="form-group">
-                                                <p class="text-muted text-center" id="formore">(For more than 5 order please send your requirements in Contact form)</p>
+                                                <label for="name"></label>
+                                                <p class="text-muted text-center" id="formore">(For more than 5 order<br> please send your requirements in Contact form)</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <button type="submit" id="submit" name="send" class="btn btn-dark">Buy <i class="icon-size-15 ml-2 icon" data-feather="send"></i></button>
+                                            <button type="submit" id="submit" name="send" class="btn btn-dark">Buy <i class="icon-size-15 ml-2 icon" data-feather="shopping-cart"></i></button>
                                             <div id="simple-msg"></div>
                                         </div>
                                     </div>
