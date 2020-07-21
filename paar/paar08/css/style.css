@@ -1302,7 +1302,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 576px) {
   #preloader .sk-grid {
     position: absolute;
-    left: 42%;
+    left: 44%;
     top: 45%;
     -webkit-transform: translateY(50%);
     transform: translateY(50%);
