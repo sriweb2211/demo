@@ -1244,11 +1244,13 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   bottom: 0;
   background: -webkit-gradient(linear, right bottom, left top, from(#f59d9d), to(#5a4fdc));
-  background: linear-gradient(to top left, #f59d9d 0%, #5a4fdc 100%);
+  /*background: linear-gradient(to top left, #f59d9d 0%, #5a4fdc 100%);*/
+  background: linear-gradient(to top left, #000000 0%, #61617b 100%);
   z-index: 9999999;
 }
 
-#preloader #status {
+/*#preloader #status {*/
+#preloader .sk-grid {
   position: absolute;
   left: 50%;
   top: 50%;
