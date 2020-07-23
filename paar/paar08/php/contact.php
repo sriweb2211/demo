@@ -9,9 +9,11 @@ function isEmail($email) {
 
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
-$name     = $_POST['name'];
-$email    = $_POST['email'];
-$comments = $_POST['comments'];
+$name   	= $_POST['name'];
+$bname     	= $_POST['businessname'];
+$email    	= $_POST['email'];
+$type 		= $_POST['type'];
+$comments 	= $_POST['comments'];
 
 if(trim($name) == '') {
 	echo '<div class="error_message">You must enter your name.</div>';
@@ -33,29 +35,14 @@ if(get_magic_quotes_gpc()) {
 	$comments = stripslashes($comments);
 }
 
-
-// Configuration option.
-// Enter the email address that you want to emails to be sent to.
-// Example $address = "joe.doe@yourdomain.com";
-
-//$address = "example@example.net";
-$address = "example@example.net";
-
-
-// Configuration option.
-// i.e. The standard subject will appear as, "You've been contacted by John Doe."
-
-// Example, $e_subject = '$name . ' has contacted you via Your Website.';
+$address = "sriweb2211@gmail.com";
 
 $e_subject = 'You have been contacted by ' . $name . '.';
 
-
-// Configuration option.
-// You can change this if you feel that you need to.
-// Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
-
 $e_body = "You have been contacted by $name. Their additional message is as follows." . PHP_EOL . PHP_EOL;
-$e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
+$e_content = "\"$bname\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$type\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$comments\"" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name via email, $email";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
