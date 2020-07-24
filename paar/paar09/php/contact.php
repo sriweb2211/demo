@@ -40,9 +40,9 @@ $address = "sriweb2211@gmail.com";
 $e_subject = 'You have been contacted by ' . $name . '.';
 
 $e_body = "You have been contacted by $name. Their additional message is as follows." . PHP_EOL . PHP_EOL;
-$e_content = "\"$bname\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$type\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$comments\"" . PHP_EOL . PHP_EOL;
+$e_content =  "Business Name: "."\"$bname\"" . PHP_EOL . PHP_EOL;
+$e_content .= "Type: "."\"$type\"" . PHP_EOL . PHP_EOL;
+$e_content .= "Comment: "."\"$comments\"" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name via email, $email";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
@@ -69,3 +69,5 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	echo 'ERROR!';
 
 }
+
+header("Location: ../.");
