@@ -35,7 +35,7 @@ if(get_magic_quotes_gpc()) {
 	$comments = stripslashes($comments);
 }
 
-$address = "sriweb2211@gmail.com";
+$address = "paar@bipolarfactory.com";
 
 $e_subject = 'You have been contacted by ' . $name . '.';
 
