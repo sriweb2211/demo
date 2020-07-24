@@ -353,6 +353,54 @@
                                 <div class="col-sm-12">
                                     <button type="submit" id="submit" name="send" class="btn btn-dark">Send Message <i class="icon-size-15 ml-2 icon" data-feather="send"></i></button>
                                     <div id="simple-msg"></div>
+
+                                    <!-- <div class="alert alert-danger fade in" role="alert">
+                                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div> -->
+
+                                    <!-- <div class="alert alert-success" id="success-alert">
+                                        <button type="button" class="close" data-dismiss="alert">x</button>
+                                        <strong>Success! </strong> Thank You for contacting us
+                                    </div> -->
+
+                                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+                                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                          ...
+                                        </div>
+                                      </div>
+                                    </div> -->
+
+                                    <!-- <div class="modal" tabindex="-1" role="dialog">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <p>Modal body text goes here.</p>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div> -->
+
+                                    <div class="alert alert-success" role="alert" data-auto-dismiss="2000">
+                                      simple success example
+                                    </div>
+
+                                    <!-- <div class="alert alert-danger fade in"> -->
+
                                 </div>
                             </div>
                         </form>
