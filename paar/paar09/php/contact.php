@@ -11,6 +11,7 @@ define(EMAIL_TO, 'paar@bipolarfactpry.com');
 define(EMAIL_TO_2, 'sriweb2211@gmail.com');
 
 $name   	= $_POST['name'];
+$mobile   	= $_POST['mobile'];
 $bname     	= $_POST['businessname'];
 $email    	= $_POST['email'];
 $type 		= $_POST['type'];
@@ -51,16 +52,18 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 $message = '<html><body>';
 $message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
-$message .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . strip_tags($name) . "</td></tr>";
-$message .= "<tr style='background: #eee;'><td><strong>Business Name:</strong> </td><td>" . strip_tags($bname) . "</td></tr>";
-$message .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($email) . "</td></tr>";
-$message .= "<tr><td><strong>Required Type:</strong> </td><td>" . strip_tags($type) . "</td></tr>";
-$message .= "<tr><td><strong>Message:</strong> </td><td>" . htmlentities($comments) . "</td></tr>";
+$message .= "<tr><td style='background: #eee; text-align: center;' colspan='2'><strong>Contact from " . strip_tags($name) . "</strong></td></tr>";
+$message .= "<tr><td style='background: #eee;'><strong>Name:</strong> </td><td>" . strip_tags($name) . "</td></tr>";
+$message .= "<tr><td style='background: #eee;'><strong>Mobile:</strong> </td><td>" . strip_tags($moile) . "</td></tr>";
+$message .= "<tr><td style='background: #eee;'><strong>Business Name:</strong> </td><td>" . strip_tags($bname) . "</td></tr>";
+$message .= "<tr><td style='background: #eee;'><strong>Email:</strong> </td><td>" . strip_tags($email) . "</td></tr>";
+$message .= "<tr><td style='background: #eee;'><strong>Required Type:</strong> </td><td>" . strip_tags($type) . "</td></tr>";
+$message .= "<tr><td style='background: #eee;'><strong>Message:</strong> </td><td>" . htmlentities($comments) . "</td></tr>";
 $message .= "</table>";
 $message .= "</body></html>";
 
 
-$mail->Subject = 'Paar.in - Contact From';
+$mail->Subject = 'Paar.in - Contact From ' . strip_tags($name);
 // $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
 $mail->Body    = $message;
 // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
